@@ -1,0 +1,15 @@
+.statusLabel{
+    display: inline;
+    
+    position: relative;
+    top: -10px;
+    background: skyblue;
+    color: white;
+    padding: 10px
+}
+.deleteButton{
+    display: inline;
+    float: right;
+    position: relative;
+    top: -15px;
+}
