@@ -1,0 +1,50 @@
+[
+  {
+    "tag": {
+      "id": {
+        "$oid": "1"
+      },
+      "name": "Ruby"
+    }
+  },
+  {
+    "tag": {
+      "id": {
+        "$oid": "2"
+      },
+      "name": "Rails"
+    }
+  },
+  {
+    "tag": {
+      "id": {
+        "$oid": "3"
+      },
+      "name": "React"
+    }
+  },
+  {
+    "tag": {
+      "id": {
+        "$oid": "4"
+      },
+      "name": "Redux"
+    }
+  },
+  {
+    "tag": {
+      "id": {
+        "$oid": "5"
+      },
+      "name": "Mongo"
+    }
+  },
+  {
+    "tag": {
+      "id": {
+        "$oid": "6"
+      },
+      "name": "API"
+    }
+  }
+]

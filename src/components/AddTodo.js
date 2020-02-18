@@ -1,21 +1,5 @@
-import AddRoundedIcon from "@material-ui/icons/AddRounded";
-import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-// import React from "react";
-
-// const AddTodo = () => (
-//     <Paper elevation={3} style={{padding: 20, backgroundColor: "aliceblue"}}>
-//         <AddRoundedIcon color="secondary" style={{display: "inline"}}/>
-//         <Typography variant={"h6"} style={{color: "#f50057", display: "inline"}}>Add Todo</Typography>
-//     </Paper>
-// );
-//
-// export default AddTodo
-
-
-
 import React, { Component } from 'react';
-
 import TextField from 'material-ui/TextField';
 
 class AddTodo extends Component {

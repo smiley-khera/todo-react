@@ -2,7 +2,7 @@ import React from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Wrapper from "../components/Wrapper";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import EditTodoItem from "../components/EditTodoItem";
+import EditTodoItem from "../containers/EditTodoItem";
 
 const Application = () => (
     <div>

@@ -1,5 +1,12 @@
-import {REMOVE_TAG_FROM_TODO, DELETE_TODO, RESTORE_TODO_ITEM, ADD_TODO_ITEM, ASSIGN_TAG} from "../constants";
-import {removeTag, deleteTodoItem, restoreTodoItem, addTodoItem, assignTag} from "../apis/todos"
+import {
+    REMOVE_TAG_FROM_TODO,
+    DELETE_TODO,
+    RESTORE_TODO_ITEM,
+    ADD_TODO_ITEM,
+    ASSIGN_TAG,
+    UPDATE_TODO
+} from "../constants";
+import {removeTag, deleteTodoItem, restoreTodoItem, addTodoItem, assignTag, updateTodo} from "../apis/todos"
 import store from '../store';
 import {setVisibilityFilter} from "./menu";
 
@@ -34,6 +41,12 @@ export const assignTagToTodo = (todo) =>
         type: ASSIGN_TAG,
         payload: todo
     });
+
+export const updateTodoItem = (todo) =>
+    ({
+        type: UPDATE_TODO,
+        payload: todo
+    });
 //Async actions creators
 
 export const removeTagOfTodoItem = (item,tag) => dispatch => (
@@ -65,5 +78,12 @@ export const assignTagRequest = (todo, tag) => dispatch => (
     assignTag(todo, tag).then(res => {
         console.log("ddd" + JSON.stringify((res.data)));
         dispatch(assignTagToTodo(res.data))
+    })
+);
+
+export const updateTodoRequest = (todoId, todo) => dispatch => (
+
+    updateTodo(todoId, todo).then(res => {
+        dispatch(updateTodoItem(res.data))
     })
 );

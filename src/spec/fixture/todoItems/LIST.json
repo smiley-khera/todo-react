@@ -1,0 +1,48 @@
+[
+  {
+    "todo_item": {
+      "id": {
+        "$oid": "1"
+      },
+      "title": "Read react components",
+      "description": "Read react components",
+      "tags": [
+        {
+          "tag": {
+            "id": "1",
+            "name": "Ruby"
+          }
+        },
+        {
+          "tag": {
+            "id": "2",
+            "name": "Rails"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "todo_item": {
+      "id": {
+        "$oid": "2"
+      },
+      "title": "Read redux",
+      "description": "Read redux",
+      "tags": [
+        {
+          "tag": {
+            "id": "3",
+            "name": "Mongo"
+          }
+        },
+        {
+          "tag": {
+            "id": "4",
+            "name": "API"
+          }
+        }
+      ]
+    }
+  }
+]

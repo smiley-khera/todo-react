@@ -36,4 +36,3 @@ export default function Dashboard () {
     </main>)
 };
 
-// export default Dashboard
