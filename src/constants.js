@@ -23,3 +23,4 @@ export const RESTORE_TODO_ITEM = 'RESTORE_TODO_ITEM';
 export const ADD_TODO_ITEM = 'ADD_TODO_ITEM';
 export const ADD_TAG = 'ADD_TAG';
 export const ASSIGN_TAG = 'ASSIGN_TAG';
+export const UPDATE_TODO = 'UPDATE_TODO';

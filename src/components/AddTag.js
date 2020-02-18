@@ -28,8 +28,6 @@ class AddTag extends Component {
         }
     };
     handleSubmit = (value) => {
-        console.log(value);
-        console.log(this.props);
         return (this.props.onSubmit(value));
     };
 

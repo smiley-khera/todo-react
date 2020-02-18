@@ -8,10 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import MenuBar from "../containers/MenuBar";
 import Dashboard from "./Dashboard";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import TagLink from "../containers/TagLink";
-import VisibleTodoList from "../containers/VisibleTodoList";
-import EditTodoItem from "./EditTodoItem";
 
 const drawerWidth = 240;
 
@@ -64,13 +60,6 @@ export default function Wrapper() {
                 <MenuBar/>
                 <Divider/>
             </Drawer>
-            {/*<Router>*/}
-            {/*    <Switch>*/}
-            {/*        <Route path="/" exact={true} component={Dashboard}/>*/}
-            {/*        /!*<Route path="/todo_items/:id/edit" exact component={EditTodoItem}/>*!/*/}
-            {/*        <Route path="/todo_items/:id/edit" exact={true} component={EditTodoItem}/>*/}
-            {/*    </Switch>*/}
-            {/*</Router>*/}
             <Dashboard content={classes.content} toolbar={classes.toolbar}/>
         </div>
     );

@@ -5,7 +5,7 @@ const request = axios.create({
     baseURL: APIUrl
 });
 
-const assignTagBody = (tag) => (
+const tagRequestBody = (tag) => (
     {todo_item: {tag_ids: [tag]}}
 );
 
@@ -34,5 +34,9 @@ export const addTodoItem = (todo) => (
 );
 
 export const assignTag = (todo, tag) => (
-    request.patch(`todo_items/${todo}/add_tags.json`, assignTagBody(tag))
-)
+    request.patch(`todo_items/${todo}/add_tags.json`, tagRequestBody(tag))
+);
+
+export const  updateTodo = (todoId, todo) => (
+    request.patch(`todo_items/${todoId}.json`, todo)
+);
