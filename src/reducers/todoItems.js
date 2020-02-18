@@ -34,12 +34,9 @@ export const todoItems = (state = INITIAL_STATE, action) => {
             return [...state, action.payload];
         case ASSIGN_TAG:
             state.map(element => {
-               // if (element.todo_item.id.$oid != action.payload.todo_item.id.$oid) {
                     element.todo_item.tags = action.payload.todo_item.tags;
-                //}
                 return element
             });
-
         default:
             return state
     }
