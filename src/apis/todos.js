@@ -13,7 +13,7 @@ const tagRequestBody = (tag) => (
 
 //Fetches all to-do items of specific tag or all to-dos irrespective of tag
 export const getAll = (tagId = null) => (
-    (tagId) ? request.get(`tags/${tagId}/todo_items.json?page=1`) : request.get('/todo_items.json?page=1')
+    (tagId) ? request.get(`tags/${tagId}/todo_items.json`) : request.get('/todo_items.json')
 );
 
 //remove specific tag from to-do

@@ -4,7 +4,7 @@ import {
     REMOVE_TAG_FROM_TODO,
     FETCH_ARCHIVED_TODOS,
     RESTORE_TODO_ITEM,
-    ADD_TODO_ITEM, ASSIGN_TAG
+    ADD_TODO_ITEM
 } from "../constants";
 
 const INITIAL_STATE = [];
@@ -32,11 +32,6 @@ export const todoItems = (state = INITIAL_STATE, action) => {
                 e.todo_item.id.$oid !== action.payload);
         case ADD_TODO_ITEM:
             return [...state, action.payload];
-        case ASSIGN_TAG:
-            state.map(element => {
-                    element.todo_item.tags = action.payload.todo_item.tags;
-                return element
-            });
         default:
             return state
     }

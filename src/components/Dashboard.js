@@ -2,6 +2,7 @@ import AddTodo from "../containers/AddTodo";
 import VisibleTodoList from "../containers/VisibleTodoList";
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -27,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Dashboard () {
+export default function Dashboard() {
     const classes = useStyles();
     return (<main className={classes.content}>
         <div className={classes.toolbar}/>

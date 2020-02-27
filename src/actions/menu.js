@@ -12,7 +12,7 @@ import {
 
 // Dispatch an action of Visibility filter for to-do items
 export const setVisibilityFilter = item => dispatch => {
-    dispatch({type: 'SET_VISIBILITY_FILTER', payload: item});
+    dispatch({type: SET_VISIBILITY_FILTER, payload: item});
     return item.name.includes("Archived")
         ? dispatch(fetchArchivedTodoItemsRequest())
         : dispatch(fetchTodoItems(item.id));

@@ -8,7 +8,7 @@ const request = axios.create({
 
 //Get all tags
 export const getAll = () => (
-    request.get('/tags.json?page=1')
+    request.get('/tags.json')
 );
 
 //Create new tag
