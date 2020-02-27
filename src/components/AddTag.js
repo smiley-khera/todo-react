@@ -1,6 +1,6 @@
-import Paper from "@material-ui/core/Paper";
 import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
+import '../assets/stylesheets/tags.css'
 
 class AddTag extends Component {
     state = {
@@ -34,12 +34,12 @@ class AddTag extends Component {
     render() {
         return (
                 <TextField
+                    className="tagField"
                     hintText="Add Tag"
                     floatingLabelText="Add Tag"
                     value={this.state.text}
                     onChange={this.onChange}
                     onKeyDown={this.onKeyDown}
-                    style={styles.textField}
                     id="outlined-basic"
                     label="Outlined"
                     variant="outlined"
@@ -48,13 +48,4 @@ class AddTag extends Component {
         );
     }
 }
-
-const styles = {
-    textField: {
-        width: '100%',
-        fontSize: 16,
-        margin: '15px'
-    }
-};
-
 export default AddTag;
